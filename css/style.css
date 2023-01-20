@@ -29,3 +29,9 @@ img{
 .hero-section{
     background-color: var(--primary-color);
 }
+
+/* Portfolio */
+
+.portfolio-section{
+    background-color: white;
+}
