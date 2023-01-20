@@ -2,6 +2,7 @@
 :root{
     --primary-color: #1ABC9C;
     --secondary-color: #2C3E50;
+    --footer-color: #3A546D;
 }
 
 
@@ -34,4 +35,20 @@ img{
 
 .portfolio-section{
     background-color: white;
+}
+
+/* About */
+
+.about-section{
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+
+.main-footer{
+    background-color: var(--footer-color);
+}
+
+.sub-footer{
+    background-color: var(--secondary-color);
 }
