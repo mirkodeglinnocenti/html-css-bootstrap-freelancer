@@ -1,0 +1,31 @@
+/* Variabili */
+:root{
+    --primary-color: #1ABC9C;
+    --secondary-color: #2C3E50;
+}
+
+
+/* Resetet Rules */
+
+img{
+    max-width: 100%;
+}
+
+/* Debug Rules */
+
+[class^="col"] {
+    border: 1px dotted black;
+    background-color: aqua;
+}
+
+/* Header */
+
+.main-header{
+    background-color: var(--secondary-color);
+}
+
+/* Hero */
+
+.hero-section{
+    background-color: var(--primary-color);
+}
