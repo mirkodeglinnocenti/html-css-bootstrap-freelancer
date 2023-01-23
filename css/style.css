@@ -28,7 +28,13 @@ a{
     border: 1px dotted black;
 }
 
-/* General Rules */
+/* General */
+
+.color-primary{
+    color: var(--primary-color);
+}
+
+/* Container Rules */
 
 .container-small{
     max-width: 380px;
@@ -59,6 +65,13 @@ a{
     }
 }
 
+/* Button Rules */
+
+.btn-green{
+    background-color: var(--primary-color);
+    color: white;
+}
+
 /* Text Rules */
 
 .title-big{
@@ -80,6 +93,11 @@ a{
     font-weight: 600;
     text-transform: uppercase;
     color: currentColor;
+}
+
+.title-footer{
+    font-size: 17px;
+    text-transform: uppercase;
 }
 
 .text-18{
@@ -172,12 +190,12 @@ a{
     background-color: white;
 }
 
-.portfolio-section .star-icon{
+.secondary-star .star-icon{
     color: var(--secondary-color);
 }
 
-.portfolio-section .box-star-icon::before,
-.portfolio-section .box-star-icon::after{
+.secondary-star.box-star-icon::before,
+.secondary-star.box-star-icon::after{
     background-color: var(--secondary-color);
 }
 
@@ -187,14 +205,41 @@ a{
     background-color: var(--primary-color);
 }
 
+
+/* Contact me */
+
+.contact-me-section ::placeholder{
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
 /* Footer */
 
-.main-footer{
+.top-footer{
     background-color: var(--footer-color);
 }
 
 .sub-footer{
     background-color: var(--secondary-color);
+}
+
+/* Social Icon */
+
+.social-icon{
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 10px 15px;
+    aspect-ratio: 1/1;
+}
+
+.social-icon-big{
+    padding: 10px;
+}
+
+.social-icon-small{
+    padding: 14px;
 }
 
 
