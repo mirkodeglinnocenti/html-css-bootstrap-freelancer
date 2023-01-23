@@ -12,6 +12,11 @@ img{
     max-width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
 /* Debug Rules */
 
 .debug [class^="col"] {
@@ -21,6 +26,37 @@ img{
 
 .debug .container{
     border: 1px dotted black;
+}
+
+/* General Rules */
+
+.container-small{
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px) {
+    .container-small{
+        max-width: 460px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-small{
+        max-width: 620px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .container-small{
+        max-width: 860px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container-small{
+        max-width: 1040px;
+    }
 }
 
 /* Text Rules */
@@ -44,6 +80,10 @@ img{
     font-weight: 600;
     text-transform: uppercase;
     color: currentColor;
+}
+
+.text-18{
+    font-size: 18px;
 }
 
 /* Text Query */
