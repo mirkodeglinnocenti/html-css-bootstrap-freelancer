@@ -14,15 +14,32 @@ img{
 
 /* Debug Rules */
 
-[class^="col"] {
+.debug [class^="col"] {
     border: 1px dotted black;
     background-color: aqua;
+}
+
+.debug .container{
+    border: 1px dotted black;
 }
 
 /* Header */
 
 .main-header{
     background-color: var(--secondary-color);
+    padding: 15px 0;
+}
+
+.main-header .navbar-brand{
+    font-size: 29px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main-header .nav-link{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Hero */
@@ -51,4 +68,115 @@ img{
 
 .sub-footer{
     background-color: var(--secondary-color);
+}
+
+/* Star */
+
+.star-icon{
+    font-size: 1.8rem;
+    color: white;
+}
+
+.box-star-icon{
+    position: relative;
+}
+
+.box-star-icon::before {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+.box-star-icon::after {
+    content: '';
+    display: block;
+    height: 4px;
+    width: 16%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+}
+
+/* Query */
+/* 
+@media screen and (min-width: 768px) {
+
+    .box-star-icon::before {
+        width: 110px;
+        top: 50%;
+        left: 30%;
+    }
+    
+    .box-star-icon::after {
+        width: 110px;
+        top: 50%;
+        right: 30%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .box-star-icon::before {
+        width: 140px;
+        top: 50%;
+        left: 30%;
+    }
+    
+    .box-star-icon::after {
+        width: 140px;
+        top: 50%;
+        right: 30%;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .box-star-icon::before {
+        width: 170px;
+        top: 50%;
+        left: 30%;
+    }
+    
+    .box-star-icon::after {
+        width: 170px;
+        top: 50%;
+        right: 30%;
+    }
+
+} */
+
+
+/* Social Icon */
+
+.social-icon{
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 10px 15px;
+    aspect-ratio: 1/1;
+}
+
+/* Button */
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.button{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 15px;
+    border: 1px solid white;
+    border-radius: 10px;
 }

@@ -7,21 +7,34 @@
     <title>Bootstrap Freelance</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/913f8a24a8.js" crossorigin="anonymous"></script>
 </head>
-<body class="debug">
+<body class="debug-">
     
     <!-- Header -->
     <header class="main-header">
 
-        <div class="container">
-            <div class="row justify-content-between">
-
-                <div class="col-4">Logo</div>
-
-                <div class="col-4">nav</div>
-
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand text-white" href="#">Start Bootstrap</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white d-inline-block"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link text-white" aria-current="page" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+                </ul>
+              </div>
             </div>
-        </div>
+          </nav>
 
     </header>
 
@@ -29,12 +42,16 @@
     <main>
 
         <!-- Hero -->
-        <section class="hero-section text-center">
+        <section class="hero-section text-center py-5">
             <div class="container">
-                <div class="row py-5">
+                <div class="row">
                     <div class="col-12">img</div>
                     <div class="col-12">titolo</div>
-                    <div class="col-12">stella grafica</div>
+                    <div class="col-12">
+                        <div class="box-star-icon">
+                            <i class="star-icon fa-solid fa-star"></i>
+                        </div>
+                    </div>
                     <div class="col-12">testo</div>
                 </div>
             </div>
@@ -69,7 +86,11 @@
                     <div class="col-12">stella</div>
                     <div class="col-md-6">testo</div>
                     <div class="col-md-6">testo</div>
-                    <div class="col-12">Button</div>
+                    <div class="col-12">
+                        <a class="button" href="#">
+                            <i class="fa-solid fa-download"></i>
+                            Download</a>
+                    </div>
 
                 </div>
             </div>
@@ -100,7 +121,12 @@
 
             <div class="row top-footer py-5">
                 <div class="col-md-4">sinsitra</div>
-                <div class="col-md-4">centrale</div>
+                <div class="col-md-4">
+
+                    
+                        <i class="social-icon fa-brands fa-facebook-f"></i>
+
+                </div>
                 <div class="col-md-4">destra</div>
             </div>
         </div>
