@@ -23,6 +23,47 @@ img{
     border: 1px dotted black;
 }
 
+/* Text Rules */
+
+.title-big{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+.title-medium{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+.title-small{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: currentColor;
+}
+
+/* Text Query */
+
+@media screen and (min-width: 768px) {
+
+    .title-big{
+        font-size: 60px;
+    }
+
+    .title-medium{
+        font-size: 50px;
+    }
+
+    .title-small{
+        font-size: 25px;
+    }
+
+}
+
 /* Header */
 
 .main-header{
@@ -46,6 +87,10 @@ img{
 
 .hero-section{
     background-color: var(--primary-color);
+}
+
+.hero__img{
+    width:227px;
 }
 
 /* Portfolio */
