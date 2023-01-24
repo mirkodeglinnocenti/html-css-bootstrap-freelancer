@@ -189,7 +189,15 @@ input, textarea {
 }
 
 .hero__img{
-    width:227px;
+    width:188px;
+}
+
+@media all and (min-width: 768px) {
+
+    .hero__img{
+        width:227px;
+    }
+
 }
 
 /* Portfolio */
